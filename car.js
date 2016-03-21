@@ -9,8 +9,21 @@ Car.prototype.start = function() {
   this.isOn = true;
 }
 
+Car.prototype.useGas = function(gas) {
+  this.gasLevel -= gas;
+}
+
+Car.prototype.refuel = function() {
+  this.gasLevel = 100;
+}
+
 var prius = new Car("toyota");
 
 prius.start();
+prius.useGas(30);
+
+console.log(prius);
+
+prius.refuel();
 
 console.log(prius);
