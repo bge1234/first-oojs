@@ -19,11 +19,16 @@ Car.prototype.refuel = function() {
 
 var prius = new Car("toyota");
 
+console.log("Starting car...");
 prius.start();
-prius.useGas(30);
-
 console.log(prius);
+console.log("");
 
+console.log("Using 30% of fuel...");
+prius.useGas(30);
+console.log(prius);
+console.log("");
+
+console.log("Refueling...");
 prius.refuel();
-
 console.log(prius);
