@@ -17,7 +17,10 @@ Car.prototype.refuel = function() {
   this.gasLevel = 100;
 }
 
+console.log("New car:");
 var prius = new Car("toyota");
+console.log(prius);
+console.log("");
 
 console.log("Starting car...");
 prius.start();
